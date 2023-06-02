@@ -21,6 +21,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
+    font-size: 30px;
 }
 
 .nav-item {
@@ -38,6 +39,14 @@ body {
 
 .nav-item:first-child {
     margin-right: auto;
-    margin-left: 2rem;
+    margin-left: 2em;
 }
 
+/* About Section Styling */
+.about {
+    background-color: var(--clr-lightPink);
+    max-width: 30em;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto auto;
+}
