@@ -2,7 +2,7 @@
     /* Color Variables */
     --clr-primary: #27374D;
     --clr-middle: #526D82;
-    --clr-light: #DDE6ED;
+    --clr-light: #9DB2BF;
     --clr-lightest: #DDE6ED;
 }
 
@@ -34,7 +34,7 @@ body {
     margin: 0;
 }
 
-/* Navbar Start */
+/* Navbar */
 
 .header {
     border-bottom: 1px solid var(--clr-middle);
@@ -87,9 +87,7 @@ body {
     border-radius: 50%;
 }
 
-/* Navbar End */
-
-/* Hamburger menu start */
+/* Hamburger menu */
 .hamburger {
     display: none;
 }
@@ -144,7 +142,6 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-/* Hamburger menu end */
 
 /* Welcome Section */
 
@@ -166,6 +163,10 @@ body {
     margin: 40px;
 }
 
+.welcome-heading {
+    text-transform: uppercase;
+}
+
 .welcome-btn {
     padding: 1.5rem 8rem;
     font-size: 2rem;
@@ -178,4 +179,44 @@ body {
     border-radius: 5px;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .15);
     transition: transform .3s;
+    cursor: pointer;
+}
+
+.welcome-btn:hover {
+    transform: translateY(-7px);
+}
+
+/* Socials */
+
+@media only screen and (max-width: 56.25em) {
+    .socials {
+        display: none;
+    }
+}
+
+.socials {
+    position: absolute;
+    top: 18%;
+    transform: translateY(-50%);
+    background-color: var(--clr-primary);
+    box-shadow: rgba(100, 100, 111, .2) 0 7px 29px 0;
+    padding: .5rem;
+}
+
+.social-link {
+    width: 100%;
+    display: block;
+    padding: 1rem;
+    transition: background .3s;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background: var(--clr-light);
+}
+
+.social {
+    color: var(--clr-lightest);
+    width: 100%;
 }
