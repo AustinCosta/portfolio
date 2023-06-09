@@ -186,6 +186,16 @@ body {
     transform: translateY(-7px);
 }
 
+/* Adjust margins on mobile screen */
+
+@media only screen and (max-width: 600px) {
+    .welcome-heading,
+    .welcome-line,
+    .welcome-btn {
+        margin: 10px;
+    }
+}
+
 /* Socials */
 
 @media only screen and (max-width: 56.25em) {
@@ -220,3 +230,7 @@ body {
     color: var(--clr-lightest);
     width: 100%;
 }
+
+/* Education Section */
+
+
